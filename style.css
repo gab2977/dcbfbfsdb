@@ -1,0 +1,194 @@
+/* Variáveis de Cores e Configurações Globais */
+:root {
+  --font-family: Arial, Helvetica, sans-serif;
+  --bg-color: #f4f6f8;
+  --text-dark: #1a1a1a;
+  
+  /* Cores do Semáforo (Verde) */
+  --green-border: #1b5e20;
+  --green-bg: #e8f5e9;
+  --green-badge: #2e7d32;
+  
+  /* Cores do Semáforo (Amarelo) */
+  --yellow-border: #f57f17;
+  --yellow-bg: #fffde7;
+  --yellow-badge: #f57f17;
+
+  /* Cores do Semáforo (Vermelho) */
+  --red-border: #b71c1c;
+  --red-bg: #ffebee;
+  --red-badge: #c62828;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #0d47a1;
+  color: #ffffff;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  font-size: 1.1rem;
+}
+
+/* Legenda */
+.legend-container {
+  max-width: 1000px;
+  margin: 1.5rem auto 0;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.legend-item {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Layout Principal */
+.main-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.green-title { color: var(--green-border); border-color: var(--green-border); }
+.yellow-title { color: #b78103; border-color: var(--yellow-border); }
+.red-title { color: var(--red-border); border-color: var(--red-border); }
+
+.status-badge {
+  font-size: 0.8rem;
+  color: #ffffff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.badge-green { background-color: var(--green-badge); }
+.badge-yellow { background-color: #b78103; }
+.badge-red { background-color: var(--red-badge); }
+
+/* Grid de Cards */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+
+/* Estilo do Card */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.2rem;
+  border-left: 6px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-badge {
+  font-size: 0.85rem;
+  font-weight: bold;
+  align-self: flex-start;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.card h3 {
+  font-size: 1.15rem;
+  color: var(--text-dark);
+}
+
+/* Categorias de Cores dos Cards */
+.card-green {
+  border-left-color: var(--green-border);
+  background-color: var(--green-bg);
+}
+.card-green .card-badge {
+  color: var(--green-border);
+  background-color: #c8e6c9;
+}
+
+.card-yellow {
+  border-left-color: var(--yellow-border);
+  background-color: var(--yellow-bg);
+}
+.card-yellow .card-badge {
+  color: #7f6000;
+  background-color: #fff59d;
+}
+
+.card-red {
+  border-left-color: var(--red-border);
+  background-color: var(--red-bg);
+}
+.card-red .card-badge {
+  color: var(--red-border);
+  background-color: #ffcdd2;
+}
+
+/* Rodapé */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #e0e0e0;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* Responsividade (Regras @media) */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.7rem;
+  }
+  
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .legend-container {
+    flex-direction: column;
+  }
+}
