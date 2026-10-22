@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semáforo da Comunicação em Interfaces Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho Principal -->
+  <header class="header">
+    <h1>Semáforo da Comunicação</h1>
+    <p>Guia visual e acessível de boas e más práticas para criação de interfaces web.</p>
+  </header>
+
+  <!-- Legenda de Orientação -->
+  <section class="legend-container" aria-label="Legenda do Semáforo">
+    <div class="legend-item legend-green">
+      <span class="icon" aria-hidden="true">🟢</span>
+      <strong>VERDE (Aprovado):</strong> Boas práticas recomendadas.
+    </div>
+    <div class="legend-item legend-yellow">
+      <span class="icon" aria-hidden="true">🟡</span>
+      <strong>AMARELO (Atenção):</strong> Usar com cuidado e contexto.
+    </div>
+    <div class="legend-item legend-red">
+      <span class="icon" aria-hidden="true">🔴</span>
+      <strong>VERMELHO (Evitar):</strong> Más práticas que prejudicam a experiência.
+    </div>
+  </section>
+
+  <!-- Conteúdo Principal com os 15 Cards -->
+  <main class="main-container">
+
+    <!-- Categoria VERDE (Boas Práticas) -->
+    <section class="traffic-section" aria-labelledby="green-heading">
+      <h2 id="green-heading" class="section-title green-title">
+        <span class="title-icon" aria-hidden="true">🟢</span>
+        <span class="status-badge badge-green">Boas Práticas</span>
+        Práticas Recomendadas
+      </h2>
+      <div class="cards-grid">
+        
+        <article class="card card-green">
+          <div class="card-badge">🟢 Aprovado</div>
+          <h3>Linguagem Simples</h3>
+          <p>Utilize frases curtas e diretas para facilitar a leitura e a compreensão do usuário.</p>
+        </article>
+
+        <article class="card card-green">
+          <div class="card-badge">🟢 Aprovado</div>
+          <h3>Contraste Adequado</h3>
+          <p>Garanta uma diferença clara entre a cor do texto e o fundo da página.</p>
+        </article>
+
+        <article class="card card-green">
+          <div class="card-badge">🟢 Aprovado</div>
+          <h3>Textos em Imagens (alt)</h3>
+          <p>Adicione descrições alternativas úteis para leitores de tela e em imagens que não carregam.</p>
+        </article>
+
+        <article class="card card-green">
+          <div class="card-badge">🟢 Aprovado</div>
+          <h3>Botões Descritivos</h3>
+          <p>Substitua termos genéricos como "Clique aqui" por ações claras como "Enviar formulário".</p>
+        </article>
+
+        <article class="card card-green">
+          <div class="card-badge">🟢 Aprovado</div>
+          <h3>Hierarquia Visual</h3>
+          <p>Organize títulos (`h1`, `h2`, `h3`) de forma sequencial para estruturar o conteúdo.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Categoria AMARELO (Cuidado) -->
+    <section class="traffic-section" aria-labelledby="yellow-heading">
+      <h2 id="yellow-heading" class="section-title yellow-title">
+        <span class="title-icon" aria-hidden="true">🟡</span>
+        <span class="status-badge badge-yellow">Atenção</span>
+        Uso com Cuidado
+      </h2>
+      <div class="cards-grid">
+
+        <article class="card card-yellow">
+          <div class="card-badge">🟡 Atenção</div>
+          <h3>Uso de Siglas e Termos</h3>
+          <p>Evite excesso de jargões técnicos. Caso necessário, defina a sigla no primeiro uso.</p>
+        </article>
+
+        <article class="card card-yellow">
+          <div class="card-badge">🟡 Atenção</div>
+          <h3>Uso de Ícones sem Texto</h3>
+          <p>Ícones sozinhos podem gerar dúvidas; prefira combiná-los com rótulos de texto explícitos.</p>
+        </article>
+
+        <article class="card card-yellow">
+          <div class="card-badge">🟡 Atenção</div>
+          <h3>Fontes Decorativas</h3>
+          <p>Use fontes estilizadas apenas em títulos curtos; nunca utilize no corpo de texto principal.</p>
+        </article>
+
+        <article class="card card-yellow">
+          <div class="card-badge">🟡 Atenção</div>
+          <h3>Modais e Pop-ups</h3>
+          <p>Utilize apenas quando estritamente necessário para não interromper a navegação.</p>
+        </article>
+
+        <article class="card card-yellow">
+          <div class="card-badge">🟡 Atenção</div>
+          <h3>Animações em Elementos</h3>
+          <p>Mantenha animações sutis e certifique-se de que não causem desconforto ou distrações.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Categoria VERMELHO (Evitar) -->
+    <section class="traffic-section" aria-labelledby="red-heading">
+      <h2 id="red-heading" class="section-title red-title">
+        <span class="title-icon" aria-hidden="true">🔴</span>
+        <span class="status-badge badge-red">Evitar</span>
+        Práticas Prejudiciais
+      </h2>
+      <div class="cards-grid">
+
+        <article class="card card-red">
+          <div class="card-badge">🔴 Evitar</div>
+          <h3>Apenas Cores para Informar</h3>
+          <p>Não confie somente na cor para transmitir significados; inclua ícones e textos explicativos.</p>
+        </article>
+
+        <article class="card card-red">
+          <div class="card-badge">🔴 Evitar</div>
+          <h3>Textos Longos e sem Pausas</h3>
+          <p>Blocos extensos de texto sem subtítulos tornam a leitura cansativa e desorganizada.</p>
+        </article>
+
+        <article class="card card-red">
+          <div class="card-badge">🔴 Evitar</div>
+          <h3>Áudio ou Vídeo Automático</h3>
+          <p>Não reproduza mídias com som automaticamente, pois interfere em leitores de tela.</p>
+        </article>
+
+        <article class="card card-red">
+          <div class="card-badge">🔴 Evitar</div>
+          <h3>Links do Tipo "Clique Aqui"</h3>
+          <p>Evite hiperlinks vagos que não explicitam o destino do clique fora de contexto.</p>
+        </article>
+
+        <article class="card card-red">
+          <div class="card-badge">🔴 Evitar</div>
+          <h3>Baixo Contraste no Texto</h3>
+          <p>Não utilize cores de fonte muito claras em fundos claros, dificultando a leitura visual.</p>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>Semáforo da Comunicação &copy; 2026 - Desenvolvido com foco em Acessibilidade Web (WCAG).</p>
+  </footer>
+
+</body>
+</html>
